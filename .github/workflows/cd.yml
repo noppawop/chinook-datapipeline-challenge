@@ -26,4 +26,4 @@ jobs:
             databricks workspace import "pipeline.py" "/Workspace/Users/noppawop@ais.co.th/challenge_prod/pipeline" --language python --overwrite
       - name: Run production job
         run: |
-            databricks jobs run-now --job-id <job_id>
+            databricks jobs run-now --job-id 89040641846131
