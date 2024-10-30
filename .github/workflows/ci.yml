@@ -29,6 +29,6 @@ jobs:
             databricks workspace import "test.py" "/Workspace/Users/noppawop@ais.co.th/challenge_test/test" --language python --overwrite
       - name: 6 Run test job
         run: |
-            databricks jobs run-now --job-id <job_id>
+            databricks jobs run-now --job-id 29404029022445
         
       
