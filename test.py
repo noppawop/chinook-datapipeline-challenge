@@ -35,7 +35,7 @@ else:
 
 # Case 2
 mergedTracks = pd.merge(tracksInput, tracksOutput, on='TrackId', suffixes=('_input', '_output'))
-if (round(mergedTracks['UnitPrice_output'],2) == round(mergedTracks['UnitPrice_input']*33.77,2) ).all():
+if (mergedTracks['UnitPrice_output'] == round(mergedTracks['UnitPrice_input']*33.77,2) ).all():
     f.write("Case 2: Pass\n")
 else:
     f.write("Case 2: Fail\n")
